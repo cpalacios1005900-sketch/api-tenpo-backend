@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  springboot-app:
+    image: mi-springboot-app:latest   # tu jar convertido a imagen docker
+    container_name: springboot-tenpo
+    environment:
+      DATASOURCEURL: jdbc:postgresql://host.docker.internal:5432/tenpo_db
+      DATASOURCEUSERNAME: postgres
+      DATASOURCEPASSWORD: postgres
+    ports:
+      - "8080:8080"
+

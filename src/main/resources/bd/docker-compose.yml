@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  postgresbd:
+    image: postgres:16
+    container_name: postgres-tenpo
+    environment:
+      POSTGRES_DB: tenpo_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+volumes:
+  db_data:
