@@ -26,11 +26,12 @@ El objetivo principal del proyecto es proveer una API REST robusta y escalable q
 - JUnit 5 + Mockito (pruebas unitarias)  
 - Docker & Docker Compose  
 - Rate Limiting  implementar un límite de 3 request por minuto por cliente para evitar abusos del sistema. Para Ejecutar en Postman incluye X-Client-Id en el header con el fin de simular un cliente  solo para (PUT, POST, DELETE) 
+- X-Client-Id: cliente-123 ejemplo
  
 
 ---
 
-## 🗄 Configuración de la base de datos Manual
+## 🗄 Configuración de la base de datos manual
 
 La aplicación utiliza **PostgreSQL** como motor de base de datos.
 
@@ -66,7 +67,7 @@ CREATE TABLE transacciones (
 
 ---
 
-## 🔗 Endpoints principales
+## 🔗 Endpoints API REST diseñada bajo principios RESTful.
 
 | Método | Endpoint | Descripción |
 |------|---------|-------------|
