@@ -25,7 +25,8 @@ El objetivo principal del proyecto es proveer una API REST robusta y escalable q
 - Springdoc OpenAPI (Swagger)  
 - JUnit 5 + Mockito (pruebas unitarias)  
 - Docker & Docker Compose  
-- Rate Limiting (PUT, POST, DELETE)  
+- Rate Limiting  implementar un límite de 3 request por minuto por cliente para evitar abusos del sistema. Para Ejecutar en Postman incluye X-Client-Id en el header con el fin de simular un cliente  solo para (PUT, POST, DELETE) 
+ 
 
 ---
 
@@ -129,6 +130,9 @@ El proyecto incluye pruebas unitarias utilizando:
 
 - **JUnit 5**
 - **Mockito**
+- **Controller**
+- **Repository**
+- **Servicio**
 
 
 ## 👤 Autor
