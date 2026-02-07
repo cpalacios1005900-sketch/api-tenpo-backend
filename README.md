@@ -30,7 +30,7 @@ El objetivo principal del proyecto es proveer una API REST robusta y escalable q
 
 ---
 
-## 🗄 Configuración de la base de datos
+## 🗄 Configuración de la base de datos Manual
 
 La aplicación utiliza **PostgreSQL** como motor de base de datos.
 
@@ -94,31 +94,35 @@ mvn clean spring-boot:run
 La aplicación se levantará en:  
 `http://localhost:8080`
 
+Una vez levantados
+`http://localhost:8080/swagger-ui/index.html`
+
 ---
 
-### Opción 2: Ejecutar con Docker y Docker Compose
+## Opción 2: 🐳 Docker
 
-#### Requisitos
-- Docker
+La aplicación cuenta con una imagen publicada en **Docker Hub**.
 
-
-#### Levantar servicios
-
+### 📥 Descargar imagen base de datos
 ```bash
-docker-compose up --build
+docker pull cpalacios100590/postgres-tenpo:1.0
 ```
 
-#### Imágenes Docker disponibles
-
-**Descargar y montar imagen de base de datos PostgreSQL**
+### ▶️ Ejecutar contenedor
 ```bash
-- docker pull cpalacios100590/postgres-tenpo:1.0
+docker run -d -p 5432:5432 --name postgres-tenpo cpalacios100590/postgres-tenpo:1.0
 ```
 
-**Descargar y montar Backend Spring Boot**
+### 📥 Descargar imagen backend
 ```bash
-- docker pull cpalacios100590/spring-tenpo:1.0
+docker pull cpalacios100590/spring-tenpo:1.0
 ```
+
+### ▶️ Ejecutar contenedor
+```bash
+docker run -d -p 8080:8080 --name spring-tenpo cpalacios100590/spring-tenpo:1.0
+```
+
 
 Una vez levantados los contenedores, acceder a:
 
