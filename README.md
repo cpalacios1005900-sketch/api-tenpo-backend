@@ -76,9 +76,11 @@ CREATE TABLE transacciones (
 | GET | `/api/transacciones/all` | Listar todas las transacciones |
 | GET | `/api/transacciones/search?filtro={texto}` | Buscar transacciones |
 
-📘 **Swagger UI** disponible en:  
-`http://localhost:8080/swagger-ui/index.html`
 
+---
+
+### Swagger UI disponible en:
+`http://localhost:8080/swagger-ui/index.html`
 ---
 
 ## ▶️ Ejecución del proyecto
