@@ -100,7 +100,7 @@ La aplicación se levantará en:
 
 #### Requisitos
 - Docker
-- Docker Compose
+
 
 #### Levantar servicios
 
