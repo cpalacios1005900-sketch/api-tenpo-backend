@@ -30,7 +30,7 @@ El objetivo principal del proyecto es proveer una API REST robusta y escalable q
 
 ---
 
-## 🗄 Configuración de la base de datos Manual
+## 🗄 Configuración de la base de datos manual
 
 La aplicación utiliza **PostgreSQL** como motor de base de datos.
 
