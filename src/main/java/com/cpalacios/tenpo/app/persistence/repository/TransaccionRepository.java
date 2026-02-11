@@ -34,6 +34,7 @@ public interface TransaccionRepository extends JpaRepository<TransaccionEntity, 
     
 
     /**
+     * Método de consulta derivado
      * Verifica si ya existe una transacción con el número de transacción indicado.
      *
      * <p>
@@ -68,6 +69,7 @@ public interface TransaccionRepository extends JpaRepository<TransaccionEntity, 
     List<TransaccionEntity> buscarPorFiltro(@Param("filtro") String filtro);
     
     /**
+     * Método de consulta derivado
      * Cuenta cuántas transacciones existen para un cliente dado.
      *
      * @param idCliente ID del cliente
